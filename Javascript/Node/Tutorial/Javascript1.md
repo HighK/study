@@ -356,6 +356,19 @@ not ${2 * a + b}.`); // 개행
 > "Fifteen is 15 and  
 not 20."
 
+#### 세미콜론
+
+``` Javascript
+function b() {
+  var a = 4
+  return a
+}
+const a = 5
+console.log(b())
+```
+
+세미콜론`;`을 굳이 안붙여도 실행이 문법적 오류는 없다. 그러나 코드의 가독성을 위해서 적당히 넣어 줍시다.
+
 #### 다음으로
 
 ㅗㅜㅑ... 이정도면 톺아보긴 한 것같다.
