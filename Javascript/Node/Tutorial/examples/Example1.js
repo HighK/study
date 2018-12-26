@@ -1,7 +1,3 @@
-const fs = require('fs'),
-http = require('http'),
-url  = require('url');
-
-http.createServer((req, res) => {
-    res.end('Hello World!\n');
-}).listen(3000);
+$Example1.js
+const os = require('os');
+console.log(`Hello World ${os.cpus()} !`);

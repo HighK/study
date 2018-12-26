@@ -1,2 +1,5 @@
-const ES6 = () => {};
-var HighK = new ES6();
+const http = require('http');
+
+http.createServer((req, res) => {
+	res.end('Hello Node!');
+}).listen(3000);

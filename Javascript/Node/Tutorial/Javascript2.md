@@ -14,7 +14,12 @@ ES6, ES2015이게 지 궁금해 하는 분도 있었을 것이다.
 
 이제부터 `.js` 확장자를 가진 파일을 만들어 터미널(Terminer)로 실행해 볼 것이다.
 
-Windwos OS는 CMD 또는 PowerShell을 사용한다.
+Windows OS는 CMD 또는 PowerShell을 사용한다.  
+터미널에서 실행할 `.js` 파일이 담긴 디렉터리(폴더)를 지정해주고,
+
+> $ node Example1.js
+
+이렇게 입력한다.
 
 ~~~ Javascript
 $Example1.js
@@ -22,24 +27,20 @@ const os = require('os');
 console.log(`Hello World ${os.cpus()} !`);
 ~~~
 
+다음은 HTTP 서버를 생성해볼겁니다.
+
+
 ~~~ Javascript
 $Example2.js
-const http = require('http'),
+const http = require('http');
 
 http.createServer((req, res) => {
-    res.end('Hello World!\n');
+  res.end('Hello Node!');
 }).listen(3000);
 ~~~
 
-`127.0.0.1:3000` 또는 `localhost:3000` 으로 접속
+> $ node Example2.js
 
-서버는 터미널 `^C` CTR + C로 종료
+웹 브라우저에서 `127.0.0.1:3000` 또는 `localhost:3000` 으로 접속하고요.
 
-오늘은 가만 봅시다.
-
-ES6를 드디어 오류없이 쓸 수 있게됐어요!
-
-``` Javascript
-const ES6 = () => {};
-var HighK = new ES6();
-```
+서버는 터미널에서 `^C` CTR + C로 종료해주세요.
