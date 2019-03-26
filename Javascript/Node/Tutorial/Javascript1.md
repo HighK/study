@@ -317,7 +317,7 @@ Prefixes.prototype.Array = function(arr) {
 };
 
 const pre = new Prefixes('This is');
-console.log(pre.Array(['Apple', 'Banana']));
+pre.Array(['Apple', 'Banana']);
 ```
 
 ``` Javascript
@@ -329,7 +329,7 @@ function Prefixes(prefix) {
 }
 
 const pre = new Prefixes('This is');
-console.log(pre.Array(['Apple', 'Banana']));
+pre.Array(['Apple', 'Banana']);
 ```
 
 > (2) ["This is  Apple", "This is  Banana"]
