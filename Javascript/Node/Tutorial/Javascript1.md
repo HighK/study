@@ -62,7 +62,7 @@ console.log('함수 밖: ' + a);
 
 ``` Javascript
 var calc = {  // 이것도 변수임!
-  num: 0,
+  num : 0,
   Increase : function(plus) {
     this.num += plus; // 여기서의 this = Object(calc)
   },
